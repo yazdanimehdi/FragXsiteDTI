@@ -1,7 +1,6 @@
 # FragXSiteDTI
 
 This is The repository for supporting matterial of [FragXsiteDTI: Revealing Responsible Segments in Drug-Target Interaction with Transformer-Driven Interpretation](https://arxiv.org/abs/2311.02326) (Neurips AI4D3 Workshop 2023).
-https://arxiv.org/abs/2311.02326
 ![FragXsiteDTI](fragXsiteDTI.jpg)
 
 ## Requirements
