@@ -16,6 +16,35 @@ This is The repository for supporting matterial of [FragXsiteDTI: Revealing Resp
 ## Requirements
 A suitable [conda](https://conda.io/) environment can be created:
 ```
-conda env create -f noveldti.yml
-conda activate noveldti
+conda create --name fragx python=3.11
+conda activate fragx
+conda install -c conda-forge rdkit
+pip install -r requirements.txt
+
+```
+# Cite
+If you find this repo to be useful or if you use Datasets with 3D structures included, please cite our papers. Thank you.
+
+FragXsiteDTI:
+```
+@article{yalabadi2023fragxsitedti,
+  title={FragXsiteDTI: Revealing Responsible Segments in Drug-Target Interaction with Transformer-Driven Interpretation},
+  author={Yalabadi, Ali Khodabandeh and Yazdani-Jahromi, Mehdi and Yousefi, Niloofar and Tayebi, Aida and Abdidizaji, Sina and Garibay, Ozlem Ozmen},
+  journal={arXiv preprint arXiv:2311.02326},
+  year={2023}
+}
+```
+
+AttentionSiteDTI:
+```
+@article{yazdani2022attentionsitedti,
+  title={AttentionSiteDTI: an interpretable graph-based model for drug-target interaction prediction using NLP sentence-level relation classification},
+  author={Yazdani-Jahromi, Mehdi and Yousefi, Niloofar and Tayebi, Aida and Kolanthai, Elayaraja and Neal, Craig J and Seal, Sudipta and Garibay, Ozlem Ozmen},
+  journal={Briefings in Bioinformatics},
+  volume={23},
+  number={4},
+  pages={bbac272},
+  year={2022},
+  publisher={Oxford University Press}
+}
 ```
