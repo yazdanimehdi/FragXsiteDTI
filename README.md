@@ -1,9 +1,10 @@
-# 🚀 Exciting News! 🧬 
+# 🚀 Exciting News! 🧬
+
 Introducing DeepDrugDomain: A cutting-edge toolkit for Drug-Target Interaction & Affinity Prediction. Streamlined preprocessing, advanced modeling capabilities, and more - all in one comprehensive library. Revolutionize your DTI and DTA research with #DeepDrugDomain! Check it out now: [Github](https://github.com/yazdanimehdi/DeepDrugDomain) #Bioinformatics #MachineLearning #DrugDiscovery
 
 # Exciting News Ahead!
 
-:sparkles: **Coming Soon**: We are thrilled to announce that a new project, the [DeepDrugDomain Package](https://github.com/yazdanimehdi/deepdrugdomain), is in the works! While this current repository has served us well, we're gearing up for an exciting transition to a more advanced and feature-rich package.
+✨ **Coming Soon**: We are thrilled to announce that a new project, the [DeepDrugDomain Package](https://github.com/yazdanimehdi/deepdrugdomain), is in the works! While this current repository has served us well, we're gearing up for an exciting transition to a more advanced and feature-rich package.
 
 The DeepDrugDomain Package will offer enhanced capabilities for drug-target interaction and affinity prediction, integrating the latest advancements in the field. Although the repository is not public yet, we're just putting on the finishing touches.
 
@@ -16,19 +17,30 @@ Thank you for your interest and support!
 This is The repository for supporting matterial of [FragXsiteDTI: Revealing Responsible Segments in Drug-Target Interaction with Transformer-Driven Interpretation](https://arxiv.org/abs/2311.02326) (Neurips AI4D3 Workshop 2023).
 ![FragXsiteDTI](fragXsiteDTI.jpg)
 
-## Requirements
+## Requirements (Updated)
+
 A suitable [conda](https://conda.io/) environment can be created:
-```
-conda create --name fragx python=3.11
-conda activate fragx
-conda install -c conda-forge rdkit
-pip install -r requirements.txt
 
 ```
+## Create Conda env
+conda create -n fragx python=3.9
+conda activate fragx
+
+## Installations
+pip install numpy==1.26.4, scikit-learn, dgllife, rdkit-pypi, tensorflow, igraph, biopython
+# Torch requirements: >2.0, <2.4
+pip install torch==2.2.0
+# dgl should be CUDA-supported
+pip install  dgl -f https://data.dgl.ai/wheels/torch-2.2/cu121/repo.html
+pip install deepchem==2.5.0
+```
+
 # Cite
+
 If you find this repo to be useful or if you use Datasets with 3D structures included, please cite our papers. Thank you.
 
 FragXsiteDTI:
+
 ```
 @article{yalabadi2023fragxsitedti,
   title={FragXsiteDTI: Revealing Responsible Segments in Drug-Target Interaction with Transformer-Driven Interpretation},
@@ -39,6 +51,7 @@ FragXsiteDTI:
 ```
 
 AttentionSiteDTI:
+
 ```
 @article{yazdani2022attentionsitedti,
   title={AttentionSiteDTI: an interpretable graph-based model for drug-target interaction prediction using NLP sentence-level relation classification},
